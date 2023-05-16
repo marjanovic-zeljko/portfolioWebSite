@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="gamesPage.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- NAVIGATION SECTION START HERE -->
+    <nav id="nav">
+        <div>
+            <a href="index.html"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
+        </div>
+        <div class="navigationMenu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="aboutme.html">
+                    <li>About Me</li>
+                </a>
+                <a href="games.html">
+                    <li>Games</li>
+                </a>
+                <a href="content.html">
+                    <li>Content</li>
+                </a>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- NAVIGATION SECTION END HERE -->
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="/index.html" class="active"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
+            <div id="myLinks">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="aboutme.html">
+                        <li>About Me</li>
+                    </a>
+                    <a href="games.html">
+                        <li>Games</li>
+                    </a>
+                    <a href="content.html">
+                        <li>Content</li>
+                    </a>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+    </div>
+    <!-- End smartphone / tablet look -->
+
+    <div class="diceGameSection">
+        <main>
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">0</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">0</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
+
+            <img src="/Content Folder/Dice Game/" alt="Playing dice" class="dice hidden" />
+            <button class="btn btn--new">🔄 New game</button>
+            <button class="btn btn--roll">🎲 Roll dice</button>
+            <button class="btn btn--hold">📥 Hold</button>
+        </main>
+
+    </div>
+    <!-- FOOTER SECTION START HERE -->
+    <footer class="hidden-section" style="background-color: white;">
+        <div>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
+                </li>
+                <a href="/aboutme.html">
+                    <li>About Me</li>
+                </a>
+                <a href="games.html">
+                    <li>Games</li>
+                </a>
+                <a href="content.html">
+                    <li>Content</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END HERE -->
+    <script src="games.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

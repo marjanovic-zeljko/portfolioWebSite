@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeljko Marjanovic</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript, CMS, Wordpress, Shopify, web development">
+    <meta name="description" content="I am a software developer with experience working with a variety of content management systems (CMS), including Wordpress and Shopify, as well as developing fully custom websites. Collaborating with UX/UI designers, I create responsive designs for clients. My expertise primarily lies in Shopify, but I am also capable of developing websites on Wordpress or through custom coding if requested by a client.">
+    <meta name="author" content="Zeljko Marjanovic">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/covered-by-your-grace" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- NAVIGATION SECTION START HERE -->
+    <nav id="nav">
+        <div>
+            <a href="index.html"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
+        </div>
+        <div class="navigationMenu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="aboutme.html">
+                    <li>About Me</li>
+                </a>
+                <a href="games.html">
+                    <li>Games</li>
+                </a>
+                <a href="content.html">
+                    <li>Content</li>
+                </a>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- NAVIGATION SECTION END HERE -->
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="/index.html" class="active"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
+            <div id="myLinks">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="aboutme.html">
+                        <li>About Me</li>
+                    </a>
+                    <a href="games.html">
+                        <li>Games</li>
+                    </a>
+                    <a href="content.html">
+                        <li>Content</li>
+                    </a>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+    </div>
+    <!-- End smartphone / tablet look -->
+
+    <!-- HERO SECTION START HERE -->
+    <section class="heroSection">
+        <div class="heroLeft">
+            <h1>Experienced Developer Specializing in E-commerce</h1>
+            <p>I am an experienced software developer proficient in frontend technologies such as HTML5, CSS3, and JavaScript. With expertise in e-commerce platforms like Shopify and Wordpress, I specialize in creating stunning and accessible websites tailored
+                to meet the unique needs of businesses.</p>
+        </div>
+        <div class="heroRight">
+            <img src="/Content Folder/Banner Section/BANNER_ELEMENT.png" alt="Hero Section">
+        </div>
+
+    </section>
+
+    <!-- HERO SECTION END HERE -->
+
+    <!-- USP SECTION START HERE -->
+    <section class="uspSection">
+
+        <div>
+            <div><img src="/Content Folder/Banner Section/USP-1.png" alt="html"></div>
+            <div><img src="/Content Folder/Banner Section/USP-2.png" alt="css"></div>
+            <div><img src="/Content Folder/Banner Section/USP-3.png" alt="javascript"></div>
+            <div><img src="/Content Folder/Banner Section/USP-4.png" alt="shopify"></div>
+            <div><img src="/Content Folder/Banner Section/USP-5.png" alt="wordpress"></div>
+            <div><img src="/Content Folder/Banner Section/USP-6.png" alt="sass"></div>
+        </div>
+    </section>
+    <!-- USP SECTION END HERE -->
+
+    <!-- ABOUT ME SECTION START HERE -->
+    <section class="aboutMe hidden-section">
+
+        <div class="aboutMeLeft">
+            <div class="aboutMeQuote">
+                <h2>Transforming ideas into digital realities through elegant and innovative software development.</h2>
+            </div>
+        </div>
+        <div class="aboutMeRight">
+            <h3>Unlocking Opportunities in Software Development</h3>
+            <p>Welcome to my portfolio! I'm a software developer specializing in custom websites, CMS platforms, responsive design, and frontend development, actively seeking new opportunities to contribute my expertise and drive innovation in software development.</p>
+            <a href="aboutme.html"><button class="aboutMeButton">LEARN MORE</button></a>
+        </div>
+
+    </section>
+    <!-- ABOUT ME SECTION END HERE -->
+
+    <!-- MY PROJECTS SECTION START HERE -->
+    <section class="sectionProjects hidden-section">
+        <div>
+            <h4>SOME OF MY PROJECTS</h4>
+        </div>
+        <section class="sectionCarousel">
+
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/client11.jpg" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/client1.jpg" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project2.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project22.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project3.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project4.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project5.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project6.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project7.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project8.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project9.jpg" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/Content Folder/Project Section/project10.png" alt="client" class="zoomE">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+
+    </section>
+    <!-- MY PROJECTS SECTION END HERE -->
+
+    <!-- ABOUT ME SECTION START HERE -->
+    <section class="sectionWhyMe hidden-section">
+
+        <div class="sectionWhyMeLeft">
+            <h4>Why Choose Me
+            </h4>
+            <p>As a software developer with a diverse skill set and a strong background in web development, I offer a unique blend of expertise that sets me apart. With experience working on various content management systems like Wordpress and Shopify,
+                I have a deep understanding of building custom websites tailored to clients' needs.</p>
+            <p>My ability to collaborate seamlessly with UX/UI designers enables me to create responsive designs that enhance user experiences. Whether you require a Shopify store, a Wordpress site, or a fully custom solution, I have the versatility to deliver
+                high-quality results.</p>
+            <p>By choosing me, you can expect a committed professional who values constant improvement, effective time management, and collaborative teamwork. I am eager to leverage my skills and expertise to contribute to the success of your projects and
+                help you achieve your goals in the ever-evolving landscape of software development.</p>
+        </div>
+        <div class="sectionWhyRight">
+            <img src="/Content Folder/Why me/program" alt="Why Me">
+        </div>
+
+    </section>
+    <!-- ABOUT ME SECTION END HERE -->
+
+
+
+    <!-- FOOTER SECTION START HERE -->
+    <footer class="hidden-section">
+        <div>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
+                </li>
+                <a href="/aboutme.html">
+                    <li>About Me</li>
+                </a>
+                <a href="games.html">
+                    <li>Games</li>
+                </a>
+                <a href="content.html">
+                    <li>Content</li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END HERE -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

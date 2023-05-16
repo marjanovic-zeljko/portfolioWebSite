@@ -1,0 +1,962 @@
+/** Accent Color 1: A deep burgundy color (#6F2232) 
+Accent Color 2: Incorporate a soft and muted gold color (#D8B26E) */
+
+body {
+    background-color: #F8F8F8;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* NAVIGATION SECTION START HERE */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    height: 35px;
+}
+
+nav .navigationMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .navigationMenu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .navigationMenu ul li {
+    margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #6F2232;
+}
+
+nav .navigationMenu ul li:hover {
+    opacity: 0.6;
+}
+
+nav .navigationMenu ul li:focus {
+    color: #C9A000;
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    background-color: #F8F8F8;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+/* NAVIGATION SECTION END HERE */
+
+
+/* BANNER SECTION START HERE */
+
+.heroSection {
+    background: #0F0F0F;
+    display: flex;
+    width: 100%;
+}
+
+.heroLeft {
+    width: 50%;
+}
+
+.heroRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroRight img {
+    width: 100%;
+}
+
+.heroSection .heroLeft {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 250px 0;
+    margin-left: 150px;
+    align-self: center;
+}
+
+.heroSection .heroLeft h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: #D8B26E;
+    font-weight: 500;
+}
+
+.heroSection .heroLeft p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+
+/* BANNER SECTION END HERE */
+
+
+/* USP SECTION START HERE */
+
+.uspSection {
+    display: flex;
+    width: 100%;
+}
+
+.uspSection div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.uspSection div div {
+    display: flex;
+    width: 300px;
+}
+
+.uspSection div div img {
+    width: 100px;
+}
+
+
+/* BANNER SECTION END HERE */
+
+
+/* ABOUT ME SECTION START HERE */
+
+.aboutMe {
+    background: #0F0F0F;
+    display: flex;
+    padding: 250px 0;
+}
+
+.aboutMe .aboutMeLeft {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutMe .aboutMeQuote {
+    width: 50%;
+    margin-left: 150px;
+}
+
+.aboutMe .aboutMeQuote h2 {
+    font-family: 'Covered By Your Grace', sans-serif;
+    font-size: 40px;
+    color: #D8B26E;
+    letter-spacing: 1.7px;
+    position: relative;
+}
+
+.aboutMe .aboutMeQuote h2::before {
+    content: "";
+    border-top: 5px solid white;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.aboutMe .aboutMeQuote h2::after {
+    content: "";
+    border-bottom: 5px solid #F8F8F8;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+.aboutMe .aboutMeRight {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutMe .aboutMeRight h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: #D8B26E;
+    font-weight: 500;
+}
+
+.aboutMe .aboutMeRight p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-right: 150px;
+}
+
+.aboutMe .aboutMeButton {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.aboutMe .aboutMeButton :hover {
+    background-color: #fff;
+}
+
+.aboutMe .aboutMeButton :active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .aboutMe .aboutMeButton {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+
+/* ABOUT ME SECTION END HERE */
+
+
+/* MY PROJECTS SECTION START HERE */
+
+.sectionProjects {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.sectionProjects div h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sectionCarousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
+    max-width: 1320px;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    height: 400px;
+    margin: 20px 0;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+.card .image img {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    top: 450px;
+}
+
+.swiper-pagination-bullet {
+    height: 30px!important;
+    width: 30px!important;
+    border-radius: 25px;
+    background: #C9A000!important;
+    top: 60px;
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: white!important;
+    transition: all 0.3s ease;
+    height: 50px!important;
+    width: 50px!important;
+    background-color: #C9A000;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    font-size: 20px!important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: black;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 150px!important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 150px!important;
+}
+
+
+/* MY PROJECTS SECTION END HERE */
+
+
+/* WHY ME SECTION START HERE */
+
+.sectionWhyMe {
+    background: #0F0F0F;
+    padding: 150px 0;
+    display: flex;
+}
+
+.sectionWhyMeLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    align-self: center;
+    order: 2;
+}
+
+.sectionWhyRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+.sectionWhyRight img {
+    width: 100%;
+}
+
+.sectionWhyMeLeft h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: #D8B26E;
+    font-weight: 500;
+}
+
+.sectionWhyMeLeft p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    padding-right: 150px;
+}
+
+
+/* WHY ME SECTION END HERE */
+
+
+/* FOOTER ME SECTION START HERE */
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+footer li img {
+    width: 150px;
+    height: 35px;
+}
+
+footer div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer div ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+footer div li {
+    margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #6F2232;
+}
+
+footer div li:hover {
+    opacity: 0.6;
+}
+
+
+/* FOOTER ME SECTION END HERE */
+
+
+/* effects start  */
+
+
+/* .hidden-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.5s ease;
+}
+
+.visible-section {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+
+/* effects end */
+
+.aboutMePage {
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 0;
+}
+
+.aboutMePage h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: #D8B26E;
+    font-weight: 500;
+    text-align: center;
+}
+
+.aboutMePage p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1100px) {
+    .mobile-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #0F0F0F;
+        color: white;
+        border-radius: 10px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+    }
+    .topnav a img {
+        width: 120px;
+        height: 30px;
+    }
+    .topnav a.icon {
+        background: #D8B26E;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 35px;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .active {
+        background-color: #F8F8F8;
+        color: #6F2232;
+    }
+    .fa-bars:before,
+    .fa-navicon:before {
+        content: "\f0c9";
+        font-size: 30px;
+        position: relative;
+        right: 2px;
+    }
+    /* navigation end */
+    /* banner start */
+    .heroSection {
+        flex-wrap: wrap;
+    }
+    .heroSection .heroLeft p {
+        font-size: 17px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .heroSection .heroLeft {
+        width: 100%;
+        margin: 0;
+        padding: 50px 0;
+    }
+    .heroSection .heroLeft h1 {
+        font-size: 27px;
+        text-align: center;
+    }
+    .heroRight {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* banner end */
+    /* usp section start */
+    .uspSection div div {
+        width: 70px;
+        margin: 20px;
+    }
+    /* usp section end */
+    /* about me start  */
+    .aboutMe {
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+    .aboutMe .aboutMeQuote {
+        width: 80%;
+        margin: 0;
+        text-align: center;
+    }
+    .aboutMe .aboutMeQuote h2 {
+        font-size: 30px;
+    }
+    .aboutMe .aboutMeLeft {
+        width: 100%;
+        justify-content: center;
+    }
+    .aboutMe .aboutMeRight h3 {
+        font-size: 27px;
+        padding: 20px;
+    }
+    .aboutMe .aboutMeRight p {
+        margin: 0;
+        padding: 0 30px;
+        font-size: 17px;
+    }
+    .aboutMe .aboutMeRight {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    /* about me end  */
+    /* section projects start  */
+    .sectionProjects {
+        padding: 50px 0;
+    }
+    .sectionProjects div h4 {
+        font-size: 27px;
+        padding: 0 20px;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 10px)!important;
+        left: auto;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 10px)!important;
+        right: auto;
+    }
+    .card .image img {
+        width: 80%;
+    }
+    .card .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet {
+        display: none!important;
+    }
+    /* section projects end */
+    /* section why me start  */
+    .sectionWhyMe {
+        padding: 50px 0;
+        flex-wrap: wrap;
+    }
+    .sectionWhyMeLeft {
+        width: 100%;
+        margin: 0;
+    }
+    .sectionWhyMeLeft h4 {
+        font-size: 27px;
+        text-align: center;
+    }
+    .sectionWhyMeLeft p {
+        padding: 0 30px;
+        text-align: center;
+        font-size: 17px;
+    }
+    .sectionWhyRight {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sectionWhyRight img {
+        width: 100%;
+    }
+    /* section why me end */
+    /* footer start  */
+    footer {
+        padding: 20px 0;
+    }
+    footer li img {
+        width: 120px;
+        height: 30px;
+    }
+    footer div {
+        width: 100%;
+    }
+    footer div li {
+        margin: 10px;
+        font-size: 17px;
+    }
+    /* footer end */
+    .aboutMePage {
+        padding: 50px 0;
+    }
+    .aboutMePage h1 {
+        font-size: 31px;
+    }
+    .aboutMePage p {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+/* laptop and tablet media screen  */
+
+@media only screen and (min-width: 600px) and (max-width:1100px) {
+    nav {
+        display: none;
+    }
+    .mobile-container {
+        max-width: 1100px;
+        margin: auto;
+        background-color: #0F0F0F;
+        color: white;
+        border-radius: 10px;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+        z-index: 9999;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+    }
+    .topnav a img {
+        width: 120px;
+        height: 30px;
+    }
+    .topnav a.icon {
+        background: #D8B26E;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 30px;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .active {
+        background-color: #F8F8F8;
+        color: #6F2232;
+    }
+    /* navigation end */
+    /* banner start */
+    .heroSection {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .heroSection .heroLeft p {
+        font-size: 25px;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .heroSection .heroLeft {
+        width: 100%;
+        margin: 0;
+        padding: 50px 0;
+    }
+    .heroSection .heroLeft h1 {
+        font-size: 49px;
+        text-align: center;
+    }
+    .heroRight {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* banner end */
+    /* usp section start */
+    .uspSection div div {
+        width: 200px;
+        margin: 20px;
+    }
+    /* usp section end */
+    /* about me start  */
+    .aboutMe {
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+    .aboutMe .aboutMeQuote {
+        width: 80%;
+        margin: 0;
+        text-align: center;
+    }
+    .aboutMe .aboutMeQuote h2 {
+        font-size: 40px;
+    }
+    .aboutMe .aboutMeLeft {
+        width: 100%;
+        justify-content: center;
+    }
+    .aboutMe .aboutMeRight h3 {
+        font-size: 49px;
+        padding: 20px;
+    }
+    .aboutMe .aboutMeRight p {
+        margin: 0;
+        padding: 0 30px;
+        font-size: 25px;
+    }
+    .aboutMe .aboutMeRight {
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    /* about me end  */
+    /* section projects start  */
+    .sectionProjects {
+        padding: 50px 0;
+    }
+    .sectionProjects div h4 {
+        font-size: 49px;
+        padding: 0 20px;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 10px)!important;
+        left: auto;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 10px)!important;
+        right: auto;
+    }
+    .card .image img {
+        width: 80%;
+    }
+    .card .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .swiper-pagination-bullet {
+        display: none!important;
+    }
+    /* section projects end */
+    /* section why me start  */
+    .sectionWhyMe {
+        padding: 50px 0;
+        flex-wrap: wrap;
+    }
+    .sectionWhyMeLeft {
+        width: 100%;
+        margin: 0;
+    }
+    .sectionWhyMeLeft h4 {
+        font-size: 49px;
+        text-align: center;
+    }
+    .sectionWhyMeLeft p {
+        padding: 0 30px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .sectionWhyRight {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sectionWhyRight img {
+        width: 100%;
+    }
+    /* section why me end */
+    /* footer start  */
+    footer {
+        padding: 20px 0;
+    }
+    footer li img {
+        width: 120px;
+        height: 30px;
+    }
+    footer div {
+        width: 100%;
+    }
+    footer div li {
+        margin: 10px;
+        font-size: 17px;
+    }
+    /* footer end */
+    .aboutMePage {
+        padding: 50px 0;
+    }
+    .aboutMePage h1 {
+        font-size: 31px;
+    }
+    .aboutMePage p {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width:1600px) {
+    .heroSection .heroLeft h1,
+    .aboutMe .aboutMeRight h3,
+    .sectionProjects div h4,
+    .sectionWhyMeLeft h4 {
+        font-size: 40px;
+    }
+    .aboutMe .aboutMeQuote h2 {
+        font-size: 30px;
+    }
+    .heroSection .heroLeft p,
+    .aboutMe .aboutMeRight p,
+    .sectionWhyMeLeft p {
+        font-size: 17px;
+    }
+    .uspSection div div {
+        width: 400px;
+        margin: 20px 0;
+    }
+    .sectionCarousel {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 10px)!important;
+        left: auto;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 10px)!important;
+        right: auto;
+    }
+}
+
+
+/* laptop and tablet media screen  */
+
+
+/* INFORMATION SECTION START  */
+
+.informationSection {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #0F0F0F;
+}
+
+.informationSection img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+
+/* INFORMATION SECTION END */
