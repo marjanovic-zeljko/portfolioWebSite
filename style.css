@@ -458,7 +458,7 @@ footer div li:hover {
 /* effects start  */
 
 
-/* .hidden-section {
+.hidden-section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.9s ease, transform 0.5s ease;
@@ -467,7 +467,7 @@ footer div li:hover {
 .visible-section {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 
 /* effects end */
