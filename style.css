@@ -18,7 +18,9 @@ a {
 li {
     list-style-type: none;
 }
-
+img {
+    aspect-ratio: auto;
+}
 
 /* NAVIGATION SECTION START HERE */
 
@@ -95,6 +97,7 @@ nav .navigationMenu ul li:focus {
 
 .heroRight img {
     width: 100%;
+    height: auto;
 }
 
 .heroSection .heroLeft {
@@ -148,6 +151,11 @@ nav .navigationMenu ul li:focus {
 
 .uspSection div div img {
     width: 100px;
+    height: auto;
+}
+.uspSection div div img:hover {
+    transform: scale(1.01);
+
 }
 
 
@@ -392,6 +400,7 @@ nav .navigationMenu ul li:focus {
 
 .sectionWhyRight img {
     width: 100%;
+    height: auto;
 }
 
 .sectionWhyMeLeft h4 {
@@ -578,6 +587,7 @@ footer div li:hover {
     .heroSection .heroLeft h1 {
         font-size: 27px;
         text-align: center;
+        
     }
     .heroRight {
         width: 100%;
@@ -585,10 +595,15 @@ footer div li:hover {
     }
     /* banner end */
     /* usp section start */
-    .uspSection div div {
-        width: 70px;
-        margin: 20px;
+    .uspSection div {
+        padding:0;
     }
+    .uspSection div div {
+        width: 60px;
+        margin: 10px 30px;
+    }
+
+    
     /* usp section end */
     /* about me start  */
     .aboutMe {
@@ -641,7 +656,7 @@ footer div li:hover {
         right: auto;
     }
     .card .image img {
-        width: 80%;
+        width: 60%;
     }
     .card .image {
         width: 100%;
