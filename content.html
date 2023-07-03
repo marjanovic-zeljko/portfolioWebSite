@@ -1,104 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- NAVIGATION SECTION START HERE -->
     <nav id="nav">
-        <div>
-            <a href="index.html"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
-        </div>
-        <div class="navigationMenu">
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="aboutme.html">
-                    <li>About Me</li>
-                </a>
-                <a href="games.html">
-                    <li>Games</li>
-                </a>
-                <a href="content.html">
-                    <li>Content</li>
-                </a>
-            </ul>
-        </div>
-
+      <div>
+        <a href="index.html"
+          ><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="navigationMenu">
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="aboutme.html">
+            <li>About Me</li>
+          </a>
+          <a href="games.html">
+            <li>Games</li>
+          </a>
+          <a href="content.html">
+            <li>Content</li>
+          </a>
+        </ul>
+      </div>
     </nav>
     <!-- NAVIGATION SECTION END HERE -->
 
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
-
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-            <a href="index.html" class="active"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
-            <div id="myLinks">
-                <ul>
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="aboutme.html">
-                        <li>About Me</li>
-                    </a>
-                    <a href="games.html">
-                        <li>Games</li>
-                    </a>
-                    <a href="content.html">
-                        <li>Content</li>
-                    </a>
-                </ul>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
-                <i class="fa fa-bars"></i>
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="index.html" class="active"
+          ><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"
+        /></a>
+        <div id="myLinks">
+          <ul>
+            <a href="index.html">
+              <li>Home</li>
             </a>
+            <a href="aboutme.html">
+              <li>About Me</li>
+            </a>
+            <a href="games.html">
+              <li>Games</li>
+            </a>
+            <a href="content.html">
+              <li>Content</li>
+            </a>
+          </ul>
         </div>
-
-
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          onclick="hamburgerFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
     <!-- End smartphone / tablet look -->
     <div class="informationSection">
-        <div>
-            <a href="https://docs.google.com/document/d/e/2PACX-1vSWRE81d3PU7vM6qt9NBmBCSnuEf4W3cZoGDrgZopamhoNR2K1eEplA9gXGg3hM8SC3MeXLH52Expne/pub"><img src="/Content Folder/CV image/Screenshot_6.png" alt=""></a>
-        </div>
+      <div class="pdfContainer">
+        <iframe id="pdfFrame" src="/Zeljko Marjanovic.pdf"></iframe>
+        <button id="fullscreenBtn">Toggle Fullscreen</button>
+      </div>
     </div>
+
     <!-- FOOTER SECTION START HERE -->
     <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="/index.html"><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"></a>
-                </li>
-                <a href="/aboutme.html">
-                    <li>About Me</li>
-                </a>
-                <a href="games.html">
-                    <li>Games</li>
-                </a>
-                <a href="content.html">
-                    <li>Content</li>
-                </a>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li>
+            <a href="/index.html"
+              ><img src="/Content Folder/Navigation Logo/logo.png" alt="logo"
+            /></a>
+          </li>
+          <a href="/aboutme.html">
+            <li>About Me</li>
+          </a>
+          <a href="games.html">
+            <li>Games</li>
+          </a>
+          <a href="content.html">
+            <li>Content</li>
+          </a>
+        </ul>
+      </div>
     </footer>
     <!-- FOOTER SECTION END HERE -->
     <script src="script.js"></script>
-</body>
+  </body>
 
-<style>
-
-</style>
-
-
+  <style></style>
 </html>
